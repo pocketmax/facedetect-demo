@@ -12,7 +12,7 @@ let ctx = canvas.getContext("2d");
 const setupCamera = () => {
     navigator.mediaDevices
         .getUserMedia({
-            video: { width: 600, height: 400 },
+            video: { width: 200, height: 200 },
             audio: false,
         })
         .then((stream) => {
@@ -24,7 +24,7 @@ const detectFaces = async () => {
     const prediction = await model.estimateFaces(video, false);
 
     // draw the video first
-    ctx.drawImage(video, 0, 0, 600, 400);
+    ctx.drawImage(video, 0, 0, 200, 200);
 
     prediction.forEach((pred) => {
 
