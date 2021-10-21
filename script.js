@@ -1,15 +1,7 @@
 'use strict'
 
-// TODO deploy to ghpages
-// TODO expression detection i.e. if the face is happy or sad
-// TODO face recognition so it knows if it's me
 // TODO refactoring into angular
-// TODO add stats in video feed i.e. frame rate, prediction rate
 // TODO controls float above video
-// TODO supports pet face detection / dog or cat
-// TODO facial expression matcher to an emoji
-
-
 
 let video = document.getElementById("video");
 let model;
